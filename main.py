@@ -20,7 +20,7 @@ def main() -> None:
     try:
         name = input("Enter your name (or press Enter for 'World'): ").strip()
     except EOFError:
-        name = """"
+        name = ""
     if not name:
         name = "World"
     print(greet(name))
